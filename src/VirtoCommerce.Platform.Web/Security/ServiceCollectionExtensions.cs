@@ -66,7 +66,7 @@ namespace VirtoCommerce.Platform.Web.Security
             }
             else
             {
-                var dataProtectionKeysFolder = new DirectoryInfo(webHostEnvironment.MapPath("~/App_Data/DataProtectionKeys"));
+                var dataProtectionKeysFolder = new DirectoryInfo(webHostEnvironment.MapPath("~/app_data/dataprotectionkeys"));
                 //configure the data protection system to persist keys to the specified directory
                 services.AddDataProtection().PersistKeysToFileSystem(dataProtectionKeysFolder);
             }
